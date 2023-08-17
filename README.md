@@ -1,36 +1,46 @@
 # Badge Info Popup APEX Template Component Plug-In
-The **Badge Info Popup** Template Component Plugin utilizes the standard Badge Template Component and adds the ability to show an icon on the right-hand side of the badge, which can be clicked on to show additional information about the badge.
+The **Badge Info Popup** Template Component Plugin utilizes the standard APEX Badge Theme Component and adds the ability to show an icon on the right-hand side of the badge, which can be clicked on to show additional information about the badge.
 
-The plug-in contains the same attributes as the standard APEX Badge Theme Component, plus additional attributes that allow you to include an optional Additional Information Popup for each badge. This can be useful when you want to keep the UI simple and allow the user to click an icon to see additional information quickly. This can be especially useful for badges where it may not be obvious why the badge is colored red, for example.
+The plug-in contains the same attributes as the standard APEX Badge Theme Component, plus additional attributes that allow you to include an optional Additional Information Popup for each badge. This can be useful when you want to keep the UI simple and allow your users to click an icon to see additional information quickly. This can be especially useful for badges where it may not be obvious why the badge is colored red, for example.
 
-This Template Component Plug-in supports and 'Single (Partial)' and Multiple (Report) usage.
+This Template Component Plug-in supports and 'Single (Partial)' and 'Multiple (Report)' usage.
 
 # Options
-There are various attributes available that allow you to:
+There are various attributes available that allow you to. 
 - Conditionally show an Additional Info button on the right hand side of the badge.
 - Choose which icon should indicate additional information is available.
-- Choose the icon and styling of the Info Popup.
-- Choose a title and body text for the Info Popup.
+- Choose the icon and styling for the Additional Info Popup.
+- Choose a title and body text for the Additional Info Popup.
 
 # Dependencies
-The Popup message is displayed using the `apex.message.alert` JavaScript API. The plugin is based on a copy of the standard APEX Badge Theme Component, and there are no external library dependencies.
+The Additional Info Popup message is displayed using the APEX `apex.message.alert` JavaScript API. The badge is based on a copy of the standard APEX Badge Theme Component. There are no external library dependencies.
+
+# Demonstration
+![Country_Flags_Plugin_Screenshot](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Badge%20Info%20Popup%20Demo.gif?raw=true)
+
+[Link to Demo Application](https://apex.oracle.com/pls/apex/r/jdd/tc/badge-info-popup) to Demo Application.
 
 # Examples
-![Country_Flags_Plugin_Screenshot](https://github.com/jon-dixon/country_flags_apex_tcp/assets/107701070/37cb27cc-d3c6-4ba5-bdae-a22c29071231)
-[Link to Demo Application](https://apex.oracle.com/pls/apex/r/jdd/flags/home) to Demo Application.
 
-# Usage
-The plugin renders a country flag based on a <b>Lower Case</b> 2-character ISO 3166-1-alpha-2 code. You can find a complete list of codes [here](https://www.iso.org/obp/ui/#search)
+## Example Multiple (Report)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Example%20Multiple%20(Report)%20Usage.png?raw=true)
 
-## Single Row Query in Region
-![image](https://github.com/jon-dixon/country_flags_apex_tcp/assets/107701070/c3c7ace0-ca87-4160-bc09-621ea5ef1684)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Miltiple%20(Report)%20Setup%201.png?raw=true)
 
-## Interactive Report Column
-![image](https://github.com/jon-dixon/country_flags_apex_tcp/assets/107701070/d6c81d7f-8829-46c1-8ca5-0663ce9074bd)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Miltiple%20(Report)%20Setup%202.png?raw=true)
 
-## Usage in a Template Directive
+## Example Interactive Report Column Single (Partial)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Example%20Single%20(Partial)%20Usage.png?raw=true)
+
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Single%20(Partial)%20Setup%201.png?raw=true)
+
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Single%20(Partial)%20Setup%202.png?raw=true)
+
+## Example Template Directive Usage
 Reference the plugin as follows to use it anywhere that Template Directives can be used:
-![image](https://github.com/jon-dixon/country_flags_apex_tcp/assets/107701070/8d9495a1-2dde-4110-9b26-0c749698c6cf)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Template%20Directive%20Setup%201.png?raw=true)
+![image](https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Template%20Directive%20Setup%202.png?raw=true)
+
 ```
 {with/}
   LABEL:=On Hand

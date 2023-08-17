@@ -1,7 +1,7 @@
 {
   "name": "Badge Info Popup",
   "version": "1.0",
-  "description": "Template Component Plugin which builds on the APEX Badge component and adds the ability to click an icon to show additional information about the badge. There are no external dependencies, this plugin only uses native APEX components.",
+  "description": "Template Component Plug-in which builds on the APEX Badge component and adds the ability to click an icon to show additional information about the badge. There are no external dependencies, this plugin only uses native APEX components.",
   "keywords": ["BADGE", "POPUP"],
   "homepage": "https://github.com/jon-dixon/badge_info_popup_tcp",
   "bugs": {
@@ -13,7 +13,7 @@
   "author": {
     "name": "Jon Dixon",
     "email": "jon@cloudnueva.com",
-    "url": "https://blogs.cloudnueva.com",
+    "url": "https://blog.cloudnueva.com",
     "twitter": "JonDixonUS"
   },
   "repository": {
@@ -27,8 +27,8 @@
       "plugin": {
         "internalName": "COM.CLOUDNUEVA.BADGEINFO",
         "type": "template component",
-        "demo": "https://apex.oracle.com/pls/apex/r/jdd/flags/home",
-        "previewImage": "https://raw.githubusercontent.com/jon-dixon/country_flags_apex_tcp/main/assets/Country_Flags_Plugin_Screenshot.png?raw=true"
+        "demo": "https://apex.oracle.com/pls/apex/r/jdd/tc/badge-info-popup",
+        "previewImage": "https://github.com/jon-dixon/badge_info_popup_tcp/blob/main/assets/Badge%20Info%20Popup%20Demo.gif?raw=true"
       }
     }
   }
