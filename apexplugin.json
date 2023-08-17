@@ -1,11 +1,11 @@
 {
   "name": "Badge Info Popup",
   "version": "1.0",
-  "description": "Template Component Plugin which build on the Badge component to provide the ability to click an icon to show additional information about the badge. There are no external dependencies, this plugin only uses native APEX components only.",
+  "description": "Template Component Plugin which builds on the APEX Badge component and adds the ability to click an icon to show additional information about the badge. There are no external dependencies, this plugin only uses native APEX components.",
   "keywords": ["BADGE", "POPUP"],
-  "homepage": "https://github.com/jon-dixon/country_flags_apex_tcp",
+  "homepage": "https://github.com/jon-dixon/badge_info_popup_tcp",
   "bugs": {
-    "url": "https://github.com/jon-dixon/country_flags_apex_tcp/issues",
+    "url": "https://github.com/jon-dixon/badge_info_popup_tcp/issues",
     "email": "jon+infobadge-plugin@cloudnueva.com"
   },
   "license": "MIT",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jon-dixon/country_flags_apex_tcp.git"
+    "url": "https://github.com/jon-dixon/badge_info_popup_tcp.git"
   },
   "oracle": {
     "versions": ["23c", "21c", "19c", "18c"],
