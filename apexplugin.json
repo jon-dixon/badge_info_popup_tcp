@@ -1,6 +1,6 @@
 {
   "name": "Badge Info Popup",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Template Component Plug-in which builds on the APEX Badge component and adds the ability to click an icon to show additional information about the badge. There are no external dependencies, this plugin only uses native APEX components.",
   "keywords": ["BADGE", "POPUP"],
   "homepage": "https://github.com/jon-dixon/badge_info_popup_tcp",

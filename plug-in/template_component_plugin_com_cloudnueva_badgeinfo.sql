@@ -33,7 +33,7 @@ prompt APPLICATION 249259 - Sample Template Component Plugins
 -- Application Export:
 --   Application:     249259
 --   Name:            Sample Template Component Plugins
---   Date and Time:   17:27 Thursday August 17, 2023
+--   Date and Time:   14:51 Friday August 18, 2023
 --   Exported By:     JON_DIXON_US@YAHOO.COM
 --   Flashback:       0
 --   Export Type:     Component Export
@@ -68,7 +68,7 @@ wwv_flow_imp_shared.create_plugin(
 '    {if LABEL_DISPLAY/}<span class="t-Badge-label">#LABEL!RAW#</span>{endif/}',
 '    <span class="t-Badge-value">#VALUE!RAW#</span>',
 '    {if INFO_BODY/}<href="javascript:void(0)" title="Click for More Information" onclick="apex.message.alert(''#INFO_BODY#'', function(){null;}, {title:''#INFO_TITLE#'', dialogClasses:''cn-alert-popup #INFO_POPUP_WIDTH#'', style:''#INFO_STYLE#'', iconClasses'
-||':''fa #INFO_POPUP_ICON#'', okLabel:''Close''})"><span aria-hidden="true" class="t-Badge-icon margin-left-sm #INFO_ICON#"></span></a>{endif/}',
+||':''fa #INFO_POPUP_ICON#'', okLabel:''Close''})"><span aria-hidden="true" class="t-Badge-icon margin-left-sm cn-info-badge-icon #INFO_ICON#"></span></a>{endif/}',
 '  </span>',
 '{endif/}'))
 ,p_default_escape_mode=>'HTML'
@@ -101,7 +101,7 @@ wwv_flow_imp_shared.create_plugin(
 '<p>The Popup message is displayed using the <code>apex.message.alert</code> JavaScript API. The plugin is based on the standard APEX Badge Template Component, and there are no external library dependencies.</p>'))
 ,p_version_identifier=>'1.0'
 ,p_about_url=>'https://github.com/jon-dixon/badge_info_popup_tcp'
-,p_files_version=>54
+,p_files_version=>58
 );
 wwv_flow_imp_shared.create_plugin_attr_group(
  p_id=>wwv_flow_imp.id(52347102498592925366)
@@ -462,28 +462,10 @@ end;
 /
 begin
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
-wwv_flow_imp.g_varchar2_table(1) := '2E636E2D616C6572742D77696474682D34303070787B77696474683A343030707821696D706F7274616E747D2E636E2D616C6572742D77696474682D35303070787B77696474683A353030707821696D706F7274616E747D2E636E2D616C6572742D7769';
-wwv_flow_imp.g_varchar2_table(2) := '6474682D36303070787B77696474683A363030707821696D706F7274616E747D2E636E2D616C6572742D706F7075707B2D2D612D616C6572742D6D6573736167652D666F6E742D73697A653A313470783B2D2D612D616C6572742D6D6573736167652D6C';
-wwv_flow_imp.g_varchar2_table(3) := '696E652D6865696768743A323070787D';
-null;
-end;
-/
-begin
-wwv_flow_imp_shared.create_plugin_file(
- p_id=>wwv_flow_imp.id(52339381343229217989)
-,p_plugin_id=>wwv_flow_imp.id(52347047567772346224)
-,p_file_name=>'cn_badge_info.min.css'
-,p_mime_type=>'text/css'
-,p_file_charset=>'utf-8'
-,p_file_content=>wwv_flow_imp.varchar2_to_blob(wwv_flow_imp.g_varchar2_table)
-);
-end;
-/
-begin
-wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '2E636E2D616C6572742D77696474682D3430307078207B77696474683A2034303070782021696D706F7274616E743B7D0A2E636E2D616C6572742D77696474682D3530307078207B77696474683A2035303070782021696D706F7274616E743B7D0A2E63';
 wwv_flow_imp.g_varchar2_table(2) := '6E2D616C6572742D77696474682D3630307078207B77696474683A2036303070782021696D706F7274616E743B7D0A0A2F2A205374796C652074686520506F707570202A2F0A2E636E2D616C6572742D706F707570207B0A20202D2D612D616C6572742D';
-wwv_flow_imp.g_varchar2_table(3) := '6D6573736167652D666F6E742D73697A653A20313470783B0A20202D2D612D616C6572742D6D6573736167652D6C696E652D6865696768743A20323070783B0A7D';
+wwv_flow_imp.g_varchar2_table(3) := '6D6573736167652D666F6E742D73697A653A20313470783B0A20202D2D612D616C6572742D6D6573736167652D6C696E652D6865696768743A20323070783B0A7D0A0A2E636E2D696E666F2D62616467652D69636F6E207B0A2020637572736F723A2070';
+wwv_flow_imp.g_varchar2_table(4) := '6F696E7465723B0A7D';
 null;
 end;
 /
@@ -492,6 +474,25 @@ wwv_flow_imp_shared.create_plugin_file(
  p_id=>wwv_flow_imp.id(52347111276138041846)
 ,p_plugin_id=>wwv_flow_imp.id(52347047567772346224)
 ,p_file_name=>'cn_badge_info.css'
+,p_mime_type=>'text/css'
+,p_file_charset=>'utf-8'
+,p_file_content=>wwv_flow_imp.varchar2_to_blob(wwv_flow_imp.g_varchar2_table)
+);
+end;
+/
+begin
+wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
+wwv_flow_imp.g_varchar2_table(1) := '2E636E2D616C6572742D77696474682D34303070787B77696474683A343030707821696D706F7274616E747D2E636E2D616C6572742D77696474682D35303070787B77696474683A353030707821696D706F7274616E747D2E636E2D616C6572742D7769';
+wwv_flow_imp.g_varchar2_table(2) := '6474682D36303070787B77696474683A363030707821696D706F7274616E747D2E636E2D616C6572742D706F7075707B2D2D612D616C6572742D6D6573736167652D666F6E742D73697A653A313470783B2D2D612D616C6572742D6D6573736167652D6C';
+wwv_flow_imp.g_varchar2_table(3) := '696E652D6865696768743A323070787D2E636E2D696E666F2D62616467652D69636F6E7B637572736F723A706F696E7465727D';
+null;
+end;
+/
+begin
+wwv_flow_imp_shared.create_plugin_file(
+ p_id=>wwv_flow_imp.id(52648226765192632818)
+,p_plugin_id=>wwv_flow_imp.id(52347047567772346224)
+,p_file_name=>'cn_badge_info.min.css'
 ,p_mime_type=>'text/css'
 ,p_file_charset=>'utf-8'
 ,p_file_content=>wwv_flow_imp.varchar2_to_blob(wwv_flow_imp.g_varchar2_table)
